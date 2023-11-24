@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="2; url=index1.html">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .animateddiv{
+            justify-self: center;
+            background-image: url(images/hj\ logo.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+      
+            width:80px;
+            height: 100px;
+            
+            animation-duration: 2.5s;
+            animation-name: logo;
+            transform: scale(3);
+        }
+        @keyframes logo{
+            from{
+                transform: scale(1);
+            }
+            to{
+                transform: scale(3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animateddiv">
+
+        </div>
+    </div>
+</body>
+</html>

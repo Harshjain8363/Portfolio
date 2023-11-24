@@ -1,0 +1,747 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+.container{
+    animation: trans 1s;
+}
+@keyframes trans{
+    from{
+        transform:  translateY(200px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+} 
+
+.container{
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    top:0px;
+    overflow-x: hidden;   
+    perspective: 10px;
+    z-index: -1;
+}
+
+
+header{
+    position: static;
+    width :100vw;
+    height:fit-content;
+    background-color: #ffffffef;
+    
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5rem;
+    
+    z-index: 10;
+}
+.klogo{
+    position: absolute;
+    left:0px;
+    width: 114px;
+    height: 95px;
+    flex-shrink: 0;
+}
+.heading{
+    line-height: 1.7;
+    color: #040404;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-family: "Arbutus Slab", serif;   
+    transition: .2s;
+}
+.heading:hover{
+    color: #56344C;
+    transform: scale(1.01);
+}
+.Me{
+    font-size: 1.9rem;
+    color:#56344C;
+}
+.parallex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.image{
+    position: absolute;
+    z-index:-1;
+}
+.vector{
+    position: absolute;
+    border-radius: 50% 50% 49% 51% / 61% 62% 38% 39%   ;
+    background-color: #56344C;
+    transform: translateZ(-20px) scale(4);
+    width: 700px;
+    z-index: -30;
+    height: 1000px;
+    top:1000px;
+    left: 1350px;
+}
+
+.insta{
+    filter:brightness(1.3);
+    transform: translateZ(-10px) scale(1.9);
+    height: 550px;
+    left: 1165px;
+    top:280px;
+    clip-path: polygon(20% 0, 88% 0, 89% 100%, 19% 100%, 0% 50%);
+  
+}
+
+.cube{
+    left: 640px;
+    top:765px;
+    transform: translateZ(-5px) scale(2);
+    animation-name: cubeani;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes cubeani {
+    from{
+        transform: translateZ(-5px) scale(2) rotate(180deg);
+    }
+    to{
+        transform: translateZ(-5px) scale(2.5) rotate(0deg);
+    }
+    
+}
+.dot{
+    left: 1570px;
+    top:450px;
+    transform: translateZ(-5px) scale(1.4);
+    animation-name: dotani;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes dotani {
+    from{
+        transform: translateZ(-5px) scale(1);
+    }
+    to{
+        transform: translateZ(-5px) scale(1.5);
+    }
+    
+}
+.plus{
+    left: 790px;
+    top:325px;
+    transform: translateZ(-5px) scale(2);
+    animation-name: plusani;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+
+}
+@keyframes plusani {
+    from{
+        top:300px;
+        transform:translateZ(-5px) scale(2) rotate(180deg) ;
+    }
+    to{
+        top:335px;
+        transform:translateZ(-5px) scale(2) rotate(0deg) ;
+    }
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:-540px;
+    top:250px;
+    transform: translateZ(-15px) scale(2.1);
+}
+.name{
+    color: #56344C;
+text-align: center;
+font-family: Inter;
+font-size: 84px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+}
+.cursor{
+    color: #1E1E1E;
+    font-family:  Julius Sans One;;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    text-align: center;
+}
+.logos{
+    
+    display: flex;
+    height: 60px;
+    width:500px;
+    justify-content: space-around;
+
+}
+.icon{
+    width:60px;
+    height: 60px;
+    
+}
+.twitter{
+    background-image: url(images/twitter.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.instagram{
+    background-image: url(images/instagram.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+}
+.github{
+    background-image: url(images/github.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.linkedin{
+    background-image: url(images/linkedin.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.abtme{
+    text-decoration: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    background:#56344C;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #ffffff;
+}
+.abtme a i{
+    font-size: 22px;
+}
+.abtme:hover{
+    background-color: #000;
+}
+.resume{
+    
+    
+    width: 100vw;
+    height: fit-content;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6rem;
+    gap:4rem;
+}
+.flexdiv{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:4rem;
+}
+.resume h1{
+    border-bottom: 3px solid #56344C;
+    color: #000;
+    width: 200px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.icn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #56344C;
+    padding: 15px;
+
+
+}
+td{
+    padding-left: 1.4rem;
+    line-height: 1.7;
+    color: #666666;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Arbutus Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.info table{
+    width:30vw;
+}
+
+.resumehead{
+    display: flex;
+    gap:2rem;
+    height: fit-content;
+    width: 30rem;
+    
+}
+.mainh{
+    padding-left: 0px;
+    font-size: 1.6rem;
+    font-family: "Arbutus Slab", serif;
+    color: #000;
+}
+.edu{
+    display: flex;
+    height: 200px;
+}
+
+td .data{
+    perspective: 800px;
+    position: absolute;
+    
+    width:30vw;
+    overflow: hidden;
+    height: 190px;
+    background-color: #ffffff;
+    visibility: hidden;
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition: 1s;
+}
+
+
+td .edur{
+    position: relative;
+    
+    visibility: hidden;
+}
+.edur:checked+label+.data
+{
+    transform: rotate3d(0, 1, 0, 0deg);
+    visibility:visible;
+}
+.line2{
+
+    color: #56344C;
+}
+.line3,.line4{
+    text-align: end;
+}
+
+td label{
+    position: relative;
+    top:190px;
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #56344C;
+    transition: .5s;
+    
+}
+
+.edur:checked + label{
+    width:25px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #666666;
+}
+
+.line5{
+    text-align: start;
+    margin-left: 30px;
+}
+
+
+#dataskill,#dataskill1,#dataskill2{
+    line-height: 23px;
+}
+
+.projects{
+    padding: 6rem;
+    padding-bottom: 0px;
+    width:100vw;
+    height:fit-content;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details{
+    display: flex;
+    padding: 6rem;
+    gap:6rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.vecellsite{
+    width:30vw;
+    height:30vw;
+    background-image: url(images/ecom.webp);
+    background-size: contain;
+    transition: 1s;
+}
+.librarymanagement{
+    width:30vw;
+    height:30vw;
+    background-image: url(images/lib.jpg);
+    background-size: contain;
+    transition: 1s;
+}
+
+.titmetablegen{
+    width:30vw;
+    height:30vw;
+    background-image: url(images/timetable.jpg);
+    background-size: contain;
+    transition: 1s;
+}
+.boxp{
+    border-radius: 10px;
+}
+
+.projects h1{
+    width:200px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #56344C;
+}
+.cnt{
+    border-radius: 10px;
+    background-color: #1b15159f;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
+    
+}
+.det{
+    
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+.boxp:hover{
+    transform: scale(0.9);
+    background-color: #271b1b;
+
+}
+.librarymanagement:hover .cnt{
+    visibility: visible;
+}
+
+.titmetablegen:hover .cnt{
+    visibility: visible;
+}
+
+.vecellsite:hover .cnt{
+    visibility: visible;
+}
+
+.cnt a{
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 7px;
+    background:#56344C;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #ffffff;
+}
+.cnt a:hover{
+    background-color: #000000;
+}
+
+.contact{
+    width: 100vw;
+    height:fit-content;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-top: 6rem;
+}
+
+.insidecon{
+    align-self: start;
+    padding-left: 10rem;
+    padding-top: 1rem;
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    
+
+}
+
+.add{
+    float: left;
+}
+
+.getintouch{
+    float: right;
+}
+
+.l1{
+    padding-left: 0px;
+    font-size: 1.6rem;
+    font-family: "Arbutus Slab", serif;
+    color: #000;
+    
+}
+
+.l2,.l3,.links{
+  
+    padding-left: 1.4rem;
+    line-height: 1.7;
+    color: #666666;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Arbutus Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.links{
+    display: flex;
+    gap:10px;
+}
+.links a i{
+    color: #666666;
+}
+.links a:hover i{
+    color: #000;
+    transform: scale(1.03);
+}
+
+.contact_card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #666666;
+    width:320px;
+    height:400px;
+}
+
+.jain{
+    clip-path: polygon(39% 0, 100% 0, 100% 100%, 39% 100%, 0% 50%);
+}
+
+.top{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height:120px;
+    background-image: url(images/Contback.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+  
+}
+
+.clip-circle{
+    clip-path: circle(50.1% at 50% 50%);
+    height: 350px;
+    width: 350px;
+}
+.dp:hover{
+    transform: scale(1.03);
+}
+.information{
+    margin-top: 60px;
+}
+.ll1{
+    color: #56344C;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.lll-ll2{
+    font-size: 25px;
+}
+
+.lll-ll1{
+    text-align: center;
+    font-size: 35px;
+}
+
+a{
+    text-decoration: none;
+}
+.ll2{
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 30px;
+    color: #737373;
+    text-overflow: ellipsis;
+    font-family: "Arbutus Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.ll3{
+    font-size: 20px;
+    color: #845175;
+}
+.lll{
+    width:100%;
+    text-align: center;
+}
+.linkss{
+    margin-top: 40px;
+}
+.linkss a{
+    
+    color: #56344C;
+    font-size: 25px;
+}
+.linkss a:hover i{
+    color: #000;
+    transform: scale(1.03);
+}
+.mail{
+    margin-top: 10px; 
+}
+.contact h1{
+    width:200px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #56344C;
+}
+.lastline{
+    color: #737373;
+}
+
+@media(width<1050px){
+    .resumehead{
+        width:70rem;
+    }
+    td .data{
+        width: 60vw;
+    }
+    .info table{
+        width: 60vw;
+    }
+    header{
+        gap:5%;
+    }
+    .heading{
+        font-size: 1.1rem;
+    }
+    html,body{
+        overflow-x: hidden;
+    }
+    .insidecon{
+        padding-left: 2rem;
+        gap: 2rem;
+    }
+    .boxp{
+        width: 70vw;
+        height: 70vw;
+    }
+    .icn{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        padding: 6px;
+    }
+    .mainh{
+        font-size: 1rem;
+    }
+    td{
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+    .image{
+        visibility: hidden;
+    }
+    .vector{
+        visibility: hidden;
+    }
+    .text{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+
+    }
+    .cursor{
+        font-size: 1.4rem;
+        line-height: 5rem;
+    }
+    .name{
+        font-size: 3rem;
+        line-height: 2rem;
+    }
+    .logos{
+        width:70vw;
+
+    }
+    .icon{
+        width:40px;
+        height: 40px;
+    }
+    .abtme{
+        width: 50vw;
+        height: fit-content;
+        font-size: 1rem;
+    }
+    .abtme a i{
+        font-size: 1rem;
+    }
+
+
+}
+
+@media(width<600px){
+    header{
+        visibility: hidden;
+    }
+    .boxp{
+        width: 50vw;
+        height: 50vw;
+    }
+    .lastline{
+        font-size: .3rem;
+    }
+    .l1{
+        font-size: .9rem;
+    }
+    .l2,.l3{
+        font-size: .6rem;
+    }
+    .links a i{
+        font-size: .6rem;
+    }
+    .det{
+        font-size: 1rem;
+    }
+}
+
